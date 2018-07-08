@@ -6,24 +6,29 @@ import javax.persistence.Id;
 @Entity
 public class TestEntity {
 
-    private int id;
+  private int id;
 
-    private String description;
+  private String description;
 
-    @Id
-    public int getId() {
-        return id;
-    }
+  public String getDescription() {
+    return description;
+  }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+  @Id
+  public int getId() {
+    return id;
+  }
 
-    public String getDescription() {
-        return description;
-    }
+  public void setDescription(String description) {
+    this.description = description;
+  }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+  public void setId(int id) {
+    this.id = id;
+  }
+
+  @Override
+  public String toString() {
+    return "TestEntity [id=" + id + ", description=" + description + "]";
+  }
 }
