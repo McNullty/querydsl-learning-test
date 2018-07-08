@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost/querydsl
+    username: oauth2
+    password: oauth2
